@@ -6,12 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HBD otis</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'power': ['Press Start 2P', 'cursive']
+                        // 'serif': ['ui-serif', 'Georgia'],
+                    },
+                }
+            }
+        };
+    </script>
 </head>
 
-<body class="flex justify-center">
-    <div class="hover: animate-bounce">
-        <a href="assets/otis.html"><img src="images/Powerline-Goofy-Movie.png"></a>
+<header class="flex justify-center items-center h-screen">
+    <div class="hover:animate-bounce">
+        <a href="assets/otis.html">
+            <img src="images/Powerline-Goofy-Movie.png" alt="Powerline" class="w-50 h-50">
+        </a>
+    </div>
+</header>
+<body>
+    <div class="flex justify-center items-center">
+        <footer class="font-power text-orange-400" style="font-family: 'Press Start 2P', cursive;">Click on Powerline to see your groovy
+            page</footer>
     </div>
 </body>
+
 
 </html>
